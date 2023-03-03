@@ -1,8 +1,13 @@
 on: push
 jobs:
   first-job:
+   build-node:
     runs-on: ubuntu-latest
     container: node:14
     steps:
       - run: node --version
       - run: npm --version
+      
+
+
+#Tip 3: Run a simple Node app in a GitHub actions workflow
