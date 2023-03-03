@@ -1,6 +1,5 @@
 on: push
 jobs:
-  first-job:
    build-node:
     runs-on: ubuntu-latest
     container: node:16
