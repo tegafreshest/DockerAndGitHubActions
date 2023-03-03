@@ -7,7 +7,11 @@ jobs:
     steps:
       - run: node --version
       - run: npm --version
+      - uses: actions/checkout@v3
+      - run: npm Install
+      - run: node app.js
       
+
 
 
 #Tip 3: Run a simple Node app in a GitHub actions workflow
