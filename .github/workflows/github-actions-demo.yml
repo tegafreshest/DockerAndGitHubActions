@@ -1,0 +1,17 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "job was automatically triggered by a [null] event."
+      - run: echo "job is now running on a GitHub-hosted  [null] server."
+      - run: echo "name of the branch is [null], repository is [null]."
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - run: echo "The [null] repository has been cloned to the runner."
+      - run: echo "The workflow is now ready to test your code on the runner."
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "This job's status is [null]."
